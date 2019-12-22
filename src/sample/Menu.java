@@ -7,15 +7,15 @@ public class Menu {
     String menuTitle;
     String menuContent;
     double menuPrice;
-    String foodType;
+    String menuFoodType;
 
-    public Menu(Integer menuIndex, String weekday, String menuTitle, String menuContent, Double menuPrice, String foodType) {
+    public Menu(int menuIndex, String weekday, String menuTitle, String menuContent, Double menuPrice, String menuFoodType) {
         this.menuIndex = menuIndex;
         this.weekday = weekday;
         this.menuTitle = menuTitle;
         this.menuContent = menuContent;
         this.menuPrice = menuPrice;
-        this.foodType = foodType;
+        this.menuFoodType = menuFoodType;
     }
 
     public int getMenuIndex() {
@@ -58,11 +58,11 @@ public class Menu {
         this.menuPrice = menuPrice;
     }
 
-    public String getFoodType() {
-        return foodType;
+    public String getMenuFoodType() {
+        return menuFoodType;
     }
 
-    public void setFoodType(String foodType) {
-        this.foodType = foodType;
+    public void setMenuFoodType(String foodType) {
+        this.menuFoodType = foodType;
     }
 }
