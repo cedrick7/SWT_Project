@@ -162,7 +162,7 @@ public class Editor extends Application {
                     else {
                         menuSetFailed.setText("menu safed!");
 
-                        Model.initAL();
+                        //Model.initAL();
 
                         System.out.println(
                                 "counter: " + weekdayCounter + "\n" +
@@ -174,9 +174,34 @@ public class Editor extends Application {
                         );
 
                         // save object to model.class
-                        Model.changeMenu(weekdayCounter, new Menu(weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType));
+                        //Model.changeMenu(weekdayCounter, new Menu(weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType));
 
 
+
+
+                        if(weekdayCounter == 0) {
+                            Model.deleteFile(Model.file0);
+                            Model.createFile(Model.file0);
+                            Model.writeFile(Model.file0, weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType);
+                        } else if(weekdayCounter == 1) {
+                            Model.deleteFile(Model.file1);
+                            Model.createFile(Model.file1);
+                            Model.writeFile(Model.file1, weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType);
+                        } else if(weekdayCounter == 2) {
+                            Model.deleteFile(Model.file2);
+                            Model.createFile(Model.file2);
+                            Model.writeFile(Model.file2, weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType);
+                        } else if(weekdayCounter == 3) {
+                            Model.deleteFile(Model.file3);
+                            Model.createFile(Model.file3);
+                            Model.writeFile(Model.file3, weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType);
+                        } else if(weekdayCounter == 4) {
+                            Model.deleteFile(Model.file4);
+                            Model.createFile(Model.file4);
+                            Model.writeFile(Model.file4, weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType);
+                        } else {
+                            System.err.println("Da ist wohl was schiefgelaufen mit dem counter...");
+                        }
 
 
 

@@ -1,0 +1,29 @@
+/* margins are set inline */
+
+.root.bodyBox {
+    -fx-padding: 5px;
+    -fx-spacing: 20px;
+}
+
+/*
+.root .button {
+    -fx-padding: 50px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-padding: 10;
+    -fx-border-style: solid;
+    -fx-border-width: 20px;
+}
+*/
+
+.root {
+    -fx-padding: 5px, 5px, 0px, 20px;
+}
+
+.root .VBox .label {
+    -fx-text-fill: #FF0000;
+}
+
+.root #h1 {
+    -fx-font-size: 20px;
+}

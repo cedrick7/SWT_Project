@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SimpleFileStorage-1.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../external Java libraries/DeBukkIt/SimpleFileStorage-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../external Java libraries/DeBukkIt/SimpleFileStorage-1.2.0.jar!/" />
+    </SOURCES>
+  </library>
+</component>

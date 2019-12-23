@@ -1,15 +1,15 @@
 package sample;
 
+import com.sun.tools.javac.comp.Check;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollBar;
-import javafx.scene.control.Separator;
+import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
@@ -18,11 +18,11 @@ import java.text.DecimalFormat;
 
 public class View extends Application {
 
+    // init class-variables
     private static DecimalFormat df = new DecimalFormat("0.00");
 
-
-    double foodPriceFilterChoice;
-    double configTablePricingSBStart = 3.00;
+    double configTablePricingSBStart = 3.00, foodPriceFilterChoice = configTablePricingSBStart;
+    boolean cbProof = false;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -61,12 +61,23 @@ public class View extends Application {
             // left ----------------------------------------------
 
             // center ----------------------------------------------
+            // layout0
+            VBox bodyBoxView = new VBox(20);
+
             // layout table
             GridPane gridTable = new GridPane();
             gridTable.setPadding(new Insets(10,10,10,10));
             gridTable.setHgap(10);
             gridTable.setVgap(10);
-            gridTable.setGridLinesVisible(true);
+            //gridTable.setGridLinesVisible(true);
+            gridTable.setStyle(
+                    "-fx-padding: 10;" +
+                    "-fx-border-style: solid inside;" +
+                    "-fx-border-width: 2;" +
+                    "-fx-border-insets: 5;" +
+                    "-fx-border-radius: 5;" +
+                    "-fx-border-color: blue;" +
+                    "-fx-background-fill: black;" );
 
             //root.add(node, spalte, zeile)
 
@@ -88,102 +99,77 @@ public class View extends Application {
             // monday
             gridTable.add(new Label("x"), 2, 0);
 
-            Label menu0Day = new Label(Model.getElement(0).getWeekday());
-            gridTable.add(menu0Day, 2, 1);
+            gridTable.add(new Label(Model.readFileGetWeekday(Model.file0)), 2, 1);
 
-            Label menu0Title = new Label(Model.getElement(0).getMenuTitle());
-            gridTable.add(menu0Title, 2, 2);
+            gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file0)), 2, 2);
 
-            Label menu0Content = new Label(Model.getElement(0).getMenuContent());
-            gridTable.add(menu0Content, 2, 3);
+            gridTable.add(new Label(Model.readFileGetMenuContent(Model.file0)), 2, 3);
 
-            Label menu0Pricing = new Label(String.valueOf(Model.getElement(0).getMenuPrice()));
-            gridTable.add(menu0Pricing, 2, 4);
+            gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file0))), 2, 4);
 
-            Label menu0FoodType = new Label(Model.getElement(0).getMenuFoodType());
-            gridTable.add(menu0FoodType, 2, 5);
+            gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file0)), 2, 5);
 
 
             // tuesday
             gridTable.add(new Label("x"), 3, 0);
 
-            Label menu1Day = new Label("Dienstag");
-            gridTable.add(menu1Day, 3, 1);
+            gridTable.add(new Label(Model.readFileGetWeekday(Model.file1)), 3, 1);
 
-            Label menu1Title = new Label("nothing here");
-            gridTable.add(menu1Title, 3, 2);
+            gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file1)), 3, 2);
 
-            Label menu1Content = new Label("nothing here");
-            gridTable.add(menu1Content, 3, 3);
+            gridTable.add(new Label(Model.readFileGetMenuContent(Model.file1)), 3, 3);
 
-            Label menu1Pricing = new Label("nothing here");
-            gridTable.add(menu1Pricing, 3, 4);
+            gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file1))), 3, 4);
 
-            Label menu1FoodType = new Label("nothing here");
-            gridTable.add(menu1FoodType, 3, 5);
+            gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file1)), 3, 5);
 
 
             // wednesday
             gridTable.add(new Label("x"), 4, 0);
 
-            Label menu2Day = new Label("Mittwoch");
-            gridTable.add(menu2Day, 4, 1);
+            gridTable.add(new Label(Model.readFileGetWeekday(Model.file2)), 4, 1);
 
-            Label menu2Title = new Label("nothing here");
-            gridTable.add(menu2Title, 4, 2);
+            gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file2)), 4, 2);
 
-            Label menu2Content = new Label("nothing here");
-            gridTable.add(menu2Content, 4, 3);
+            gridTable.add(new Label(Model.readFileGetMenuContent(Model.file2)), 4, 3);
 
-            Label menu2Pricing = new Label("nothing here");
-            gridTable.add(menu2Pricing, 4, 4);
+            gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file2))), 4, 4);
 
-            Label menu2FoodType = new Label("nothing here");
-            gridTable.add(menu2FoodType, 4, 5);
+            gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file2)), 4, 5);
 
 
             // thursday
             gridTable.add(new Label("x"), 5, 0);
 
-            Label menu3Day = new Label("Donnerstag");
-            gridTable.add(menu3Day, 5, 1);
+            gridTable.add(new Label(Model.readFileGetWeekday(Model.file3)), 5, 1);
 
-            Label menu3Title = new Label("nothing here");
-            gridTable.add(menu3Title, 5, 2);
+            gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file3)), 5, 2);
 
-            Label menu3Content = new Label("nothing here");
-            gridTable.add(menu3Content, 5, 3);
+            gridTable.add(new Label(Model.readFileGetMenuContent(Model.file3)), 5, 3);
 
-            Label menu3Pricing = new Label("nothing here");
-            gridTable.add(menu3Pricing, 5, 4);
+            gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file3))), 5, 4);
 
-            Label menu3FoodType = new Label("nothing here");
-            gridTable.add(menu3FoodType, 5, 5);
+            gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file3)), 5, 5);
 
 
             // friday
             gridTable.add(new Label("x"), 6, 0);
 
-            Label menu4Day = new Label("Freitag");
-            gridTable.add(menu4Day, 6, 1);
+            gridTable.add(new Label(Model.readFileGetWeekday(Model.file4)), 6, 1);
 
-            Label menu4Title = new Label("nothing here");
-            gridTable.add(menu4Title, 6, 2);
+            gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file4)), 6, 2);
 
-            Label menu4Content = new Label("nothing here");
-            gridTable.add(menu4Content, 6, 3);
+            gridTable.add(new Label(Model.readFileGetMenuContent(Model.file4)), 6, 3);
 
-            Label menu4Pricing = new Label("nothing here");
-            gridTable.add(menu4Pricing, 6, 4);
+            gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file4))), 6, 4);
 
-            Label menu4FoodType = new Label("nothing here");
-            gridTable.add(menu4FoodType, 6, 5);
+            gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file4)), 6, 5);
 
 
 
-            //
+            // configure price
 
-            HBox configTablePricing = new HBox(10);
+            HBox configTablePricing = new HBox(30);
             Label configTablePricingText = new Label("Preise bis " + configTablePricingSBStart + "€");
 
             ScrollBar configTablePricingSB = new ScrollBar();
@@ -201,10 +187,72 @@ public class View extends Application {
                 }
             });
 
+            // configure type of food
 
-            // layout 1
-            VBox bodyBoxView = new VBox(10);
-            bodyBoxView.getChildren().addAll(gridTable, configTablePricing);
+            HBox configTableFoodType = new HBox(30);
+
+            CheckBox cb0 = new CheckBox("Alles");
+            cb0.setSelected(true);
+            CheckBox cb1 = new CheckBox("Normal");
+            CheckBox cb2 = new CheckBox("Vegetarisch");
+            CheckBox cb3 = new CheckBox("Vegan");
+
+
+            // submit configurations
+
+            HBox submitConfigs = new HBox(30);
+
+            Button submitConfigsButton = new Button("OK");
+            Label submitConfigsLabel = new Label();
+
+            submitConfigsButton.setOnAction(new EventHandler<ActionEvent>() {
+
+                @Override
+                public void handle(ActionEvent event) {
+
+                    String message = "Dein Filter: [  ";
+
+                    df.setRoundingMode(RoundingMode.UP);
+                    message += df.format(foodPriceFilterChoice) + "€  ";
+
+                    if (cb0.isSelected()) {
+                        message += cb0.getText() + "  ";
+                        cbProof = true;
+                    }
+                    if (cb1.isSelected()) {
+                        message += cb1.getText() + "  ";
+                        cbProof = true;
+                    }
+                    if (cb2.isSelected()) {
+                        message += cb2.getText() + "  ";
+                        cbProof = true;
+                    }
+                    if (cb3.isSelected()) {
+                        message += cb3.getText() + "  ";
+                        cbProof = true;
+                    }
+
+                    if(!(cb0.isSelected() | cb1.isSelected() | cb2.isSelected() | cb3.isSelected()))
+                        cbProof = false;
+
+                    message += "]";
+
+                    if(cbProof == true)
+                        submitConfigsLabel.setText(message);
+                    else
+                        submitConfigsLabel.setText("Bitte wähle etwas aus!");
+
+                }
+
+            });
+
+            configTablePricing.getChildren().addAll(configTablePricingSB, configTablePricingText);
+
+            configTableFoodType.getChildren().addAll(cb0, cb1, cb2, cb3);
+
+            submitConfigs.getChildren().addAll(submitConfigsButton, submitConfigsLabel);
+
+            bodyBoxView.getChildren().addAll(gridTable, configTablePricing, configTableFoodType, submitConfigs);
 
             root.setCenter(bodyBoxView);
             root.setMargin(bodyBoxView, new Insets(10, 10, 10, 10));

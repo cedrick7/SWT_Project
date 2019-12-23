@@ -1,6 +1,8 @@
 package sample;
 
-public class Menu {
+import java.io.Serializable;
+
+public class Menu implements Serializable {
 
     int menuIndex;
     String weekday;
