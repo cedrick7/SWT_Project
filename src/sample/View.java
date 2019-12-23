@@ -24,6 +24,10 @@ public class View extends Application {
     double configTablePricingSBStart = 3.00, foodPriceFilterChoice = configTablePricingSBStart;
     boolean cbProof = false;
 
+
+    String priceMonday = String.valueOf(Model.readFileGetMenuPrice(Model.file0));
+    boolean priceMondayBool = false;
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
@@ -67,7 +71,7 @@ public class View extends Application {
             // layout table
             GridPane gridTable = new GridPane();
             gridTable.setPadding(new Insets(10,10,10,10));
-            gridTable.setHgap(10);
+            gridTable.setHgap(20);
             gridTable.setVgap(10);
             //gridTable.setGridLinesVisible(true);
             gridTable.setStyle(
@@ -88,81 +92,66 @@ public class View extends Application {
             gridTable.add(new Label("x"), 0, 4);
             gridTable.add(new Label("x"), 0, 5);
 
-
+/*
             gridTable.add(new Label("x"), 1, 1);
             gridTable.add(new Label("Menüname"), 1, 2);
-            gridTable.add(new Label("Inhalt"), 1, 3);
+            gridTable.add(new Label("Menü"), 1, 3);
             gridTable.add(new Label("Preis"), 1, 4);
             gridTable.add(new Label("Art"), 1, 5);
+*/
+            gridTable.addColumn(1, (new Label("x")), (new Label("Menüname")), (new Label("Menü")), (new Label("Preis")), (new Label("Art")));
 
-
+/*
             // monday
             gridTable.add(new Label("x"), 2, 0);
-
             gridTable.add(new Label(Model.readFileGetWeekday(Model.file0)), 2, 1);
-
             gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file0)), 2, 2);
-
             gridTable.add(new Label(Model.readFileGetMenuContent(Model.file0)), 2, 3);
-
             gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file0))), 2, 4);
-
             gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file0)), 2, 5);
+   */
+            gridTable.addColumn(2,
+                    (new Label("x")),
+                    (new Label(Model.readFileGetWeekday(Model.file0))),
+                    (new Label(Model.readFileGetMenuTitle(Model.file0))),
+                    (new Label(Model.readFileGetMenuContent(Model.file0))),
+                    (new Label(priceMonday)),
+                    (new Label(Model.readFileGetMenuFoodType(Model.file0))));
 
 
             // tuesday
             gridTable.add(new Label("x"), 3, 0);
-
             gridTable.add(new Label(Model.readFileGetWeekday(Model.file1)), 3, 1);
-
             gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file1)), 3, 2);
-
             gridTable.add(new Label(Model.readFileGetMenuContent(Model.file1)), 3, 3);
-
             gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file1))), 3, 4);
-
             gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file1)), 3, 5);
 
 
             // wednesday
             gridTable.add(new Label("x"), 4, 0);
-
             gridTable.add(new Label(Model.readFileGetWeekday(Model.file2)), 4, 1);
-
             gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file2)), 4, 2);
-
             gridTable.add(new Label(Model.readFileGetMenuContent(Model.file2)), 4, 3);
-
             gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file2))), 4, 4);
-
             gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file2)), 4, 5);
 
 
             // thursday
             gridTable.add(new Label("x"), 5, 0);
-
             gridTable.add(new Label(Model.readFileGetWeekday(Model.file3)), 5, 1);
-
             gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file3)), 5, 2);
-
             gridTable.add(new Label(Model.readFileGetMenuContent(Model.file3)), 5, 3);
-
             gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file3))), 5, 4);
-
             gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file3)), 5, 5);
 
 
             // friday
             gridTable.add(new Label("x"), 6, 0);
-
             gridTable.add(new Label(Model.readFileGetWeekday(Model.file4)), 6, 1);
-
             gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file4)), 6, 2);
-
             gridTable.add(new Label(Model.readFileGetMenuContent(Model.file4)), 6, 3);
-
             gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file4))), 6, 4);
-
             gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file4)), 6, 5);
 
 
@@ -242,9 +231,13 @@ public class View extends Application {
                     else
                         submitConfigsLabel.setText("Bitte wähle etwas aus!");
 
+                    if( (Model.readFileGetMenuPrice(Model.file0)) > (foodPriceFilterChoice) )
+                        priceMondayBool = true;
                 }
 
             });
+
+            // set layout
 
             configTablePricing.getChildren().addAll(configTablePricingSB, configTablePricingText);
 
@@ -291,6 +284,10 @@ public class View extends Application {
         catch(Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static void filterTable() {
+
     }
 
     public static void main(String[] args) {
