@@ -115,7 +115,7 @@ public class View extends Application {
                     (new Label(Model.readFileGetWeekday(Model.file0))),
                     (new Label(Model.readFileGetMenuTitle(Model.file0))),
                     (new Label(Model.readFileGetMenuContent(Model.file0))),
-                    (new Label(priceMonday)),
+                    (new Label(priceMonday + "€")),
                     (new Label(Model.readFileGetMenuFoodType(Model.file0))));
 
 

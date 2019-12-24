@@ -73,8 +73,8 @@ public class Start extends Application {
             // assortment
             ToggleGroup assortmentTG = new ToggleGroup();
 
-            RadioButton assortmentStandard = new RadioButton("Standard-Mensaplan");
-            RadioButton assortmentConfigure = new RadioButton("Konfigurierter Mensaplan");
+            RadioButton assortmentStandard = new RadioButton("Mensaplan - Heute");
+            RadioButton assortmentConfigure = new RadioButton("Mensaplan - Woche");
 
             assortmentStandard.setToggleGroup(assortmentTG);
             assortmentConfigure.setToggleGroup(assortmentTG);

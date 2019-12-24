@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/SimpleFileStorage_1_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWT_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWT_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Model.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden.&#10;&#10;.... ein paar kleine Änderungen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/menu0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/menu1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/View$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/View$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/View$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/View$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/WeeksMenus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/WeeksMenus.java" afterDir="false" />
     </list>
+    <list id="e987dbe1-1786-4aad-a1f1-371c86fce0e0" name="Cedrick" comment="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden." />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,22 +74,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="315" column="43" selection-start-line="315" selection-start-column="43" selection-end-line="315" selection-end-column="43" />
+            <state relative-caret-position="612">
+              <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="n#!!doc;n#deleteFile#0;n#Model#0" />
+                <element signature="e#586#1640#0" />
                 <element signature="method#doInitfile#0;class#Model#0" />
-                <element signature="method#deleteFile#0;class#Model#0" />
-                <element signature="method#createFile#0;class#Model#0" />
-                <element signature="method#writeFile#0;class#Model#0" />
-                <element signature="method#readFile#0;class#Model#0" />
-                <element signature="method#readFileGetWeekday#0;class#Model#0" />
-                <element signature="method#readFileGetWeekday#1;class#Model#0" />
-                <element signature="method#readFileGetWeekday#2;class#Model#0" />
-                <element signature="method#readFileGetWeekday#3;class#Model#0" />
-                <element signature="method#readFileGetWeekday#4;class#Model#0" />
-                <element signature="method#readFileGetWeekday#5;class#Model#0" />
                 <element signature="method#main#0;class#Model#0" />
               </folding>
             </state>
@@ -95,10 +87,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/menus/menu0.dat">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Editor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="139">
+              <caret line="184" column="127" selection-start-line="184" selection-start-column="127" selection-end-line="184" selection-end-column="127" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,10 +104,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../external Java libraries/DeBukkIt/SimpleFileStorage-1.2.0.jar!/com/blogspot/debukkitsblog/util/FileStorage.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/READ_ME.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -124,14 +121,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
+            <state relative-caret-position="2869">
+              <caret line="231" column="77" lean-forward="true" selection-start-line="231" selection-start-column="77" selection-end-line="231" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10939#10940#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Start.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,17 +185,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/sample/styless.css" />
-        <option value="$PROJECT_DIR$/src/sample/Start.java" />
         <option value="$PROJECT_DIR$/src/sample/styles.css" />
         <option value="$PROJECT_DIR$/src/sample/WeeksMenus.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Login.java" />
         <option value="$PROJECT_DIR$/src/sample/READ_ME.txt" />
         <option value="$PROJECT_DIR$/SimpleFileStorage-master/src/com/blogspot/debukkitsblog/util/FileStorage.java" />
         <option value="$PROJECT_DIR$/src/sample/Menu.java" />
         <option value="$PROJECT_DIR$/src/sample/Editor.java" />
         <option value="$PROJECT_DIR$/src/sample/Model.java" />
+        <option value="$PROJECT_DIR$/src/sample/Login.java" />
         <option value="$PROJECT_DIR$/src/sample/View.java" />
+        <option value="$PROJECT_DIR$/src/sample/Start.java" />
       </list>
     </option>
   </component>
@@ -188,7 +208,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1404" />
+    <option name="width" value="1595" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -200,7 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,6 +227,11 @@
             <path>
               <item name="SWT_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="SWT_Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SWT_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWT_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="menus" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SWT_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -229,6 +253,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,7 +280,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -274,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.View">
+  <component name="RunManager" selected="Application.Start">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -351,8 +376,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sample.View" />
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Start" />
       <module name="SWT_Project" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -365,8 +390,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeeksMenus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sample.WeeksMenus" />
+    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.View" />
       <module name="SWT_Project" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -418,19 +443,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.WeeksMenus" />
       <item itemvalue="Application.View" />
       <item itemvalue="Application.Login" />
       <item itemvalue="Application.Editor" />
       <item itemvalue="Application.Model" />
+      <item itemvalue="Application.Start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Start" />
         <item itemvalue="Application.View" />
         <item itemvalue="Application.Editor" />
-        <item itemvalue="Application.Model" />
         <item itemvalue="Application.Login" />
-        <item itemvalue="Application.WeeksMenus" />
+        <item itemvalue="Application.Model" />
       </list>
     </recent_temporary>
   </component>
@@ -440,6 +465,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <changelist id="e987dbe1-1786-4aad-a1f1-371c86fce0e0" name="Cedrick" comment="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden." />
       <created>1359379246138</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -454,7 +480,8 @@
       <workItem from="1576853792687" duration="683000" />
       <workItem from="1577020244774" duration="13185000" />
       <workItem from="1577110539813" duration="2808000" />
-      <workItem from="1577115346070" duration="8814000" />
+      <workItem from="1577115346070" duration="11468000" />
+      <workItem from="1577191957089" duration="2460000" />
     </task>
     <task id="LOCAL-00001" summary="Classnames changed and some other changes">
       <created>1577041360861</created>
@@ -470,17 +497,30 @@
       <option name="project" value="LOCAL" />
       <updated>1577041410445</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden.">
+      <created>1577124567953</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577124567953</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden.&#10;&#10;.... ein paar kleine Änderungen">
+      <created>1577127226677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577127226677</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48392000" />
+    <option name="totallyTimeSpent" value="53506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1404" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1595" height="1027" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18135096" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16162266" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -490,7 +530,7 @@
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880098" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1593583" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45882353" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -525,7 +565,21 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Classnames changed and some other changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classnames changed and some other changes" />
+    <MESSAGE value="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden." />
+    <MESSAGE value="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden.&#10;&#10;.... ein paar kleine Änderungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Die Tabelle funktioniert jetzt, man muss sie nur noch stylen.&#10;Die Funktionen zum filtern der Tabelle sind in der GUI eingebaut, müssen aber noch programmiert werden.&#10;&#10;.... ein paar kleine Änderungen" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Model.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -573,10 +627,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Start.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        <state relative-caret-position="201">
+          <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu0.txt" />
+    <entry file="file://$PROJECT_DIR$/SWT_Project.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menus/menu3.txt" />
+    <entry file="file://$PROJECT_DIR$/menus/menu4.txt" />
+    <entry file="file://$PROJECT_DIR$/src/sample/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menus/menu2.txt" />
+    <entry file="file://$PROJECT_DIR$/menus/menu1.txt" />
+    <entry file="file://$PROJECT_DIR$/menus/menu5.txt" />
+    <entry file="file://$PROJECT_DIR$/SimpleFileStorage-master/src/com/blogspot/debukkitsblog/util/FileStorage.java" />
+    <entry file="file://$PROJECT_DIR$/menus/menu0.txt" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="121" selection-start-line="13" selection-start-column="121" selection-end-line="13" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menus/menu0.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#586#1640#0" />
+            <element signature="method#doInitfile#0;class#Model#0" />
+            <element signature="method#main#0;class#Model#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2869">
+          <caret line="231" column="77" lean-forward="true" selection-start-line="231" selection-start-column="77" selection-end-line="231" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../external Java libraries/DeBukkIt/SimpleFileStorage-1.2.0.jar!/com/blogspot/debukkitsblog/util/FileStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Editor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="184" column="127" selection-start-line="184" selection-start-column="127" selection-end-line="184" selection-end-column="127" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -590,116 +719,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/io/File.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu0.txt" />
-    <entry file="file://$PROJECT_DIR$/SWT_Project.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menus/menu3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menus/menu4.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        <state relative-caret-position="207">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menus/menu2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menus/menu1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menus/menu5.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleFileStorage-master/src/com/blogspot/debukkitsblog/util/FileStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../external Java libraries/DeBukkIt/SimpleFileStorage-1.2.0.jar!/com/blogspot/debukkitsblog/util/FileStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menus/menu0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="121" selection-start-line="13" selection-start-column="121" selection-end-line="13" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="315" column="43" selection-start-line="315" selection-start-column="43" selection-end-line="315" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#deleteFile#0;n#Model#0" />
-            <element signature="method#doInitfile#0;class#Model#0" />
-            <element signature="method#deleteFile#0;class#Model#0" />
-            <element signature="method#createFile#0;class#Model#0" />
-            <element signature="method#writeFile#0;class#Model#0" />
-            <element signature="method#readFile#0;class#Model#0" />
-            <element signature="method#readFileGetWeekday#0;class#Model#0" />
-            <element signature="method#readFileGetWeekday#1;class#Model#0" />
-            <element signature="method#readFileGetWeekday#2;class#Model#0" />
-            <element signature="method#readFileGetWeekday#3;class#Model#0" />
-            <element signature="method#readFileGetWeekday#4;class#Model#0" />
-            <element signature="method#readFileGetWeekday#5;class#Model#0" />
-            <element signature="method#main#0;class#Model#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Editor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10939#10940#0" expanded="true" />
           </folding>
         </state>
       </provider>

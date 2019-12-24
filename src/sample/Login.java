@@ -100,7 +100,6 @@ public class Login extends Application {
                         loginFailed.setText("incorrect username or password!");
                 }
 
-
             });
 
             bodyBoxLogin.setPadding(new Insets(10, 10, 10, 10));
