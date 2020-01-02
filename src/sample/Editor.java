@@ -109,9 +109,9 @@ public class Editor extends Application {
             // Type of food
             ToggleGroup tg = new ToggleGroup();
 
-            RadioButton editorMenuSelectNormal = new RadioButton("normal");
-            RadioButton editorMenuSelectVegetarian = new RadioButton("vegetarian");
-            RadioButton editorMenuSelectVegan = new RadioButton("vegan");
+            RadioButton editorMenuSelectNormal = new RadioButton("Normal");
+            RadioButton editorMenuSelectVegetarian = new RadioButton("Vegetarisch");
+            RadioButton editorMenuSelectVegan = new RadioButton("Vegan");
 
             editorMenuSelectNormal.setToggleGroup(tg);
             editorMenuSelectVegetarian.setToggleGroup(tg);
@@ -127,11 +127,11 @@ public class Editor extends Application {
                         radioProof = true;
 
                     if (rb == editorMenuSelectNormal)
-                        foodType = "normal";
+                        foodType = "Normal";
                     else if (rb == editorMenuSelectVegetarian)
-                        foodType = "vegetarian";
+                        foodType = "Vegetarisch";
                     else if (rb == editorMenuSelectVegan)
-                        foodType = "vegan";
+                        foodType = "Vegan";
                 }
             });
 
