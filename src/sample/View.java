@@ -21,7 +21,7 @@ public class View extends Application {
     // init class-variables
     private static DecimalFormat df = new DecimalFormat("0.00");
 
-    double configTablePricingSBStart = 3.00, foodPriceFilterChoice = configTablePricingSBStart;
+    double configTablePricingSBStart = 5.00, foodPriceFilterChoice = configTablePricingSBStart;
     boolean cbProof = false;
 
 
@@ -39,7 +39,7 @@ public class View extends Application {
             HBox headBox0View = new HBox(1030);
 
             // title
-            Label viewTitle = new Label("Dein Plan");
+            Label viewTitle = new Label("Mensaplan KW03");
             viewTitle.setId("h1");
             viewTitle.setFocusTraversable(true);
 
@@ -64,7 +64,8 @@ public class View extends Application {
             // center ----------------------------------------------
             // layout0
             VBox bodyBoxView = new VBox(20);
-            HBox tableBox = new HBox(10);
+            HBox tableBox = new HBox();
+            tableBox.setStyle("-fx-font-size: 18px;");
 
             // layout table
             /*
@@ -98,10 +99,10 @@ public class View extends Application {
 
             GridPane gridTableTitleCol = new GridPane();
             gridTableTitleCol.setPadding(new Insets(10,0,10,0));
-            gridTableTitleCol.setHgap(10);
+            gridTableTitleCol.setHgap(5);
             gridTableTitleCol.setVgap(10);
 
-            gridTableTitleCol.addColumn(1, (new Label("x")), (new Label("Tag")), (new Label("Menüname")), (new Label("Menü")), (new Label("Preis")), (new Label("Art")));
+            gridTableTitleCol.addColumn(1, (new Label("Tag")), (new Label("Menüname")), (new Label("Menü\n\n")), (new Label("Preis")), (new Label("Art")));
 
 /*
             // monday
@@ -120,7 +121,6 @@ public class View extends Application {
             gridTableMonday.setVisible(true);
 
             gridTableMonday.addColumn(2,
-                    (new Label("x")),
                     (new Label(Model.readFileGetWeekday(Model.file0))),
                     (new Label(Model.readFileGetMenuTitle(Model.file0))),
                     (new Label(Model.readFileGetMenuContent(Model.file0))),
@@ -131,11 +131,10 @@ public class View extends Application {
             // tuesday
             GridPane gridTableTuesday = new GridPane();
             gridTableTuesday.setPadding(new Insets(10,0,10,0));
-            gridTableTuesday.setHgap(10);
+            gridTableTuesday.setHgap(5);
             gridTableTuesday.setVgap(10);
 
             gridTableTuesday.addColumn(3,
-                    (new Label("x")),
                     (new Label(Model.readFileGetWeekday(Model.file1))),
                     (new Label(Model.readFileGetMenuTitle(Model.file1))),
                     (new Label(Model.readFileGetMenuContent(Model.file1))),
@@ -146,11 +145,10 @@ public class View extends Application {
             // wednesday
             GridPane gridTableWednesday = new GridPane();
             gridTableWednesday.setPadding(new Insets(10,0,10,0));
-            gridTableWednesday.setHgap(10);
+            gridTableWednesday.setHgap(5);
             gridTableWednesday.setVgap(10);
 
             gridTableWednesday.addColumn(4,
-                    (new Label("x")),
                     (new Label(Model.readFileGetWeekday(Model.file2))),
                     (new Label(Model.readFileGetMenuTitle(Model.file2))),
                     (new Label(Model.readFileGetMenuContent(Model.file2))),
@@ -161,11 +159,10 @@ public class View extends Application {
             // thursday
             GridPane gridTableThursday = new GridPane();
             gridTableThursday.setPadding(new Insets(10,0,10,0));
-            gridTableThursday.setHgap(10);
+            gridTableThursday.setHgap(5);
             gridTableThursday.setVgap(10);
 
             gridTableThursday.addColumn(5,
-                    (new Label("x")),
                     (new Label(Model.readFileGetWeekday(Model.file3))),
                     (new Label(Model.readFileGetMenuTitle(Model.file3))),
                     (new Label(Model.readFileGetMenuContent(Model.file3))),
@@ -176,11 +173,10 @@ public class View extends Application {
             // friday
             GridPane gridTableFriday = new GridPane();
             gridTableFriday.setPadding(new Insets(10,0,10,0));
-            gridTableFriday.setHgap(10);
+            gridTableFriday.setHgap(5);
             gridTableFriday.setVgap(10);
 
             gridTableFriday.addColumn(6,
-                    (new Label("x")),
                     (new Label(Model.readFileGetWeekday(Model.file4))),
                     (new Label(Model.readFileGetMenuTitle(Model.file4))),
                     (new Label(Model.readFileGetMenuContent(Model.file4))),
@@ -197,8 +193,9 @@ public class View extends Application {
             ScrollBar configTablePricingSB = new ScrollBar();
             configTablePricingSB.setValue(configTablePricingSBStart);
             configTablePricingSB.setMin(1);
-            configTablePricingSB.setMax(30);
-            configTablePricingSB.setMaxWidth(200);
+            configTablePricingSB.setMax(15);
+            configTablePricingSB.setMinWidth(230);
+            configTablePricingSB.setMaxWidth(350);
             //configTablePricingSB = configTablePricingSBStart;
             configTablePricingSB.valueProperty().addListener(new ChangeListener<Number>() {
                 @Override
@@ -376,24 +373,6 @@ public class View extends Application {
                         gridTableFriday.setVisible(true);
                     else
                         gridTableFriday.setVisible(false);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 }});
 

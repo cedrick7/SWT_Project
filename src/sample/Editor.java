@@ -82,17 +82,20 @@ public class Editor extends Application {
             // Title
             Label editorMenuTitleLabel = new Label("menu-title:");
             TextField editorMenuTitleText = new TextField();
+            editorMenuTitleText.setMaxWidth(300);
             editorMenuTitleText.setPromptText("enter menu-title here...");
 
             // Content
             Label editorMenuContentLabel = new Label("menu-content:");
             TextArea editorMenuContentText = new TextArea();
+            editorMenuContentText.setMaxWidth(350);
             editorMenuContentText.setPromptText("enter menu-content here...");
             editorMenuContentText.setWrapText(true);
 
             // Price
             Label editorMenuPriceLabel = new Label("menu-content:");
             TextField editorMenuPriceText = new TextField();
+            editorMenuPriceText.setMaxWidth(300);
             editorMenuPriceText.setPromptText("3.50");
             //price proof
             editorMenuPriceText.textProperty().addListener(new ChangeListener<String>() {
@@ -246,7 +249,7 @@ public class Editor extends Application {
             // *********************************************************************************************************
             //root.getChildren().addAll(headBox, bodyBox, footerBox);
             //root.setPadding(new Insets(10, 10, 10, 10));
-            Scene sceneEditor = new Scene(root, 600, 600);
+            Scene sceneEditor = new Scene(root, 500, 600);
             sceneEditor.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
             primaryStage.setScene(sceneEditor);
             primaryStage.setTitle("SWT-Projekt");

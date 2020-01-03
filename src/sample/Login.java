@@ -64,6 +64,7 @@ public class Login extends Application {
             // Username
             Label usernameLabel = new Label("username:");
             TextField usernameTextField = new TextField();
+            usernameTextField.setMaxWidth(300);
             usernameTextField.setPromptText("enter username here...");
             //Label usernameFailed = new Label("pls enter username!");
             //usernameFailed.setVisible(false);
@@ -71,6 +72,7 @@ public class Login extends Application {
             // Password
             Label passwordLabel = new Label("password:");
             PasswordField passwordTextField = new PasswordField();
+            passwordTextField.setMaxWidth(300);
             passwordTextField.setPromptText("enter password here...");
             //Label passwordFailed = new Label("pls enter password!");
             //passwordFailed.setVisible(false);
@@ -136,7 +138,7 @@ public class Login extends Application {
             // *********************************************************************************************************
             //root.getChildren().addAll(headBox, bodyBox, footerBox);
             //root.setPadding(new Insets(10, 10, 10, 10));
-            Scene sceneLogin = new Scene(root, 600, 600);
+            Scene sceneLogin = new Scene(root, 500, 600);
             sceneLogin.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
             primaryStage.setScene(sceneLogin);
             primaryStage.setTitle("SWT-Projekt");
