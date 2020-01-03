@@ -177,11 +177,6 @@ public class Editor extends Application {
                         );
 
                         // save object to model.class
-                        //Model.changeMenu(weekdayCounter, new Menu(weekdayCounter, weekday, menuTitle, menuContent, menuPrice, foodType));
-
-
-
-
                         if(weekdayCounter == 0) {
                             Model.deleteFile(Model.file0);
                             Model.createFile(Model.file0);
@@ -205,8 +200,6 @@ public class Editor extends Application {
                         } else {
                             System.err.println("Da ist wohl was schiefgelaufen mit dem counter...");
                         }
-
-
 
                     }
                 }
