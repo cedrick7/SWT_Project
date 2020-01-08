@@ -13,21 +13,22 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class Editor extends Application {
+public class Editor {
 
     // init class-variables
-    boolean radioProof = false;
+    static boolean radioProof = false;
     static int weekdayCounter = 10;
     static String weekday, menuTitle, menuContent, foodType, menuPriceProof;
     static double menuPrice = 0.00;
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
+    public static void editor() throws Exception {
         try {
             // *********************************************************************************************************
             // root
+            Stage window = new Stage();
             BorderPane root = new BorderPane();
 
             // *********************************************************************************************************
@@ -37,7 +38,8 @@ public class Editor extends Application {
 
             // title
             Label startTitle = new Label("Editor");
-            startTitle.setId("h1");
+            //startTitle.setId("h1");
+            startTitle.setStyle("-fx-font-size: 20px;");
             startTitle.setFocusTraversable(true);
 
             // login
@@ -47,6 +49,14 @@ public class Editor extends Application {
                 @Override
                 public void handle(ActionEvent event) {
                     // switch scene
+                    try {
+                        View.window.close();
+                        window.close();
+                        View.view();
+                        //Application.launch(View.class, args);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             });
 
@@ -71,7 +81,7 @@ public class Editor extends Application {
 
 
             // Date
-            Label editorMenuDateLabel = new Label("menu-weekday:");
+            Label editorMenuDateLabel = new Label("Wochentag:");
             //TextField dashboardMenuDateText = new TextField();
             //dashboardMenuDateText.setPromptText("enter menu-weekday here...");
             ChoiceBox<String> editorMenuDateCB = new ChoiceBox<>();
@@ -80,20 +90,20 @@ public class Editor extends Application {
 
 
             // Title
-            Label editorMenuTitleLabel = new Label("menu-title:");
+            Label editorMenuTitleLabel = new Label("Überschrift:");
             TextField editorMenuTitleText = new TextField();
             editorMenuTitleText.setMaxWidth(300);
-            editorMenuTitleText.setPromptText("enter menu-title here...");
+            editorMenuTitleText.setPromptText("Tagesmenü KW...");
 
             // Content
-            Label editorMenuContentLabel = new Label("menu-content:");
+            Label editorMenuContentLabel = new Label("Menu-Inhalt:");
             TextArea editorMenuContentText = new TextArea();
             editorMenuContentText.setMaxWidth(350);
-            editorMenuContentText.setPromptText("enter menu-content here...");
+            editorMenuContentText.setPromptText("Menu-Inhalt hier eingeben...");
             editorMenuContentText.setWrapText(true);
 
             // Price
-            Label editorMenuPriceLabel = new Label("menu-content:");
+            Label editorMenuPriceLabel = new Label("Preis:");
             TextField editorMenuPriceText = new TextField();
             editorMenuPriceText.setMaxWidth(300);
             editorMenuPriceText.setPromptText("3.50");
@@ -102,7 +112,7 @@ public class Editor extends Application {
                 @Override
                 public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                     menuPriceProof = newValue;
-                    if (!newValue.matches("\\d{0,2}([\\.]\\d{0,2})?"))
+                    if (!newValue.matches("\\d{0,2}([\\,]\\d{0,2})?"))
                         menuPrice = Double.parseDouble(oldValue);
                     else
                         menuPrice = Double.parseDouble(newValue);
@@ -139,10 +149,11 @@ public class Editor extends Application {
             });
 
             // Submit
-            Button editorButton = new Button("submit menu");
+            Button editorButton = new Button("OK");
 
             // Failure info
             Label menuSetFailed = new Label();
+            menuSetFailed.setTextFill(Color.RED);
 
             editorButton.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -153,17 +164,17 @@ public class Editor extends Application {
                     menuContent = editorMenuContentText.getText();
 
                     if (weekday.equals(""))
-                        menuSetFailed.setText("pls enter menu-weekday!");
+                        menuSetFailed.setText("Bitte Wochentag eingeben!");
                     else if (menuTitle.equals(""))
-                        menuSetFailed.setText("pls enter menu-title!");
+                        menuSetFailed.setText("Bitte Überschrift eingeben!");
                     else if (menuContent.equals(""))
-                        menuSetFailed.setText("pls enter menu-content!");
-                    else if (!menuPriceProof.matches("\\d{0,2}([\\.]\\d{0,2})?"))
-                        menuSetFailed.setText("pls use correct price naming");
+                        menuSetFailed.setText("Bitte Menu-Inhalt eingeben!");
+                    else if (!menuPriceProof.matches("\\d{0,2}([\\,]\\d{0,2})?"))
+                        menuSetFailed.setText("Bitte Preis in richtiger Form eingeben (z.B.: 3,00)!");
                     else if (radioProof == false)
-                        menuSetFailed.setText("pls click radio!");
+                        menuSetFailed.setText("Bitte triff eine Auswahl!");
                     else {
-                        menuSetFailed.setText("menu safed!");
+                        menuSetFailed.setText("Menu gespeichert!");
 
                         //Model.initAL();
 
@@ -243,18 +254,14 @@ public class Editor extends Application {
             //root.getChildren().addAll(headBox, bodyBox, footerBox);
             //root.setPadding(new Insets(10, 10, 10, 10));
             Scene sceneEditor = new Scene(root, 500, 600);
-            sceneEditor.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
-            primaryStage.setScene(sceneEditor);
-            primaryStage.setTitle("SWT-Projekt");
-            primaryStage.show();
+            root.setStyle("-fx-padding: 5px;" + "-fx-spacing: 20px;");
+            //sceneEditor.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+            window.setScene(sceneEditor);
+            window.show();
 
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }

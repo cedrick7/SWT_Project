@@ -16,21 +16,23 @@ import javafx.stage.Stage;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
-public class View extends Application {
+public class View {
 
     // init class-variables
-    private static DecimalFormat df = new DecimalFormat("0.00");
+    static DecimalFormat df = new DecimalFormat("0.00");
 
-    double configTablePricingSBStart = 5.00, foodPriceFilterChoice = configTablePricingSBStart;
-    boolean cbProof = false;
+    static double configTablePricingSBStart = 5.00, foodPriceFilterChoice = configTablePricingSBStart;
+    static boolean cbProof = false;
 
+    static Stage window= new Stage();
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
+    public static void view() throws Exception {
         try {
 
             // *********************************************************************************************************
             // root
+            window.setTitle("SWT-Projekt");
+
             BorderPane root = new BorderPane();
 
             // *********************************************************************************************************
@@ -39,12 +41,26 @@ public class View extends Application {
             HBox headBox0View = new HBox(1030);
 
             // title
-            Label viewTitle = new Label("Mensaplan KW03");
-            viewTitle.setId("h1");
+            Label viewTitle = new Label("Mensaplan");
+            //viewTitle.setId("h1");
+            viewTitle.setStyle("-fx-font-size: 20px;");
             viewTitle.setFocusTraversable(true);
 
             // login
             Button adminLogin = new Button("Login as Admin");
+
+            adminLogin.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    // switch scene
+                    try {
+                        //window.close();
+                        Login.login();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
 
             // set Top
             headBox0View.getChildren().addAll(viewTitle, adminLogin);
@@ -255,124 +271,123 @@ public class View extends Application {
 
                     message += "]";
 
-                    if (cbProof == true)
+                    if (cbProof == true) {
                         submitConfigsLabel.setText(message);
-                    else
+
+                        // filter monday
+                        boolean mondayP=false, mondayFT=false;
+
+                        if (Double.valueOf(Model.readFileGetMenuPrice(Model.file0)) <= foodPriceFilterChoice)
+                            mondayP = true;
+                        else
+                            mondayP = false;
+
+                        if (cb0.isSelected())
+                            mondayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file0)).equals(cb1.getText()) && cb1.isSelected())
+                            mondayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file0)).equals(cb2.getText()) && cb2.isSelected())
+                            mondayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file0)).equals(cb3.getText()) && cb3.isSelected())
+                            mondayFT = true;
+
+                        if ( mondayP && mondayFT )
+                            gridTableMonday.setVisible(true);
+                        else
+                            gridTableMonday.setVisible(false);
+
+                        // filter tuesday
+                        boolean tuesdayP=false, tuesdayFT=false;
+
+                        if (Double.valueOf(Model.readFileGetMenuPrice(Model.file1)) <= foodPriceFilterChoice)
+                            tuesdayP = true;
+                        else
+                            tuesdayP = false;
+
+                        if (cb0.isSelected())
+                            tuesdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file1)).equals(cb1.getText()) && cb1.isSelected())
+                            tuesdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file1)).equals(cb2.getText()) && cb2.isSelected())
+                            tuesdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file1)).equals(cb3.getText()) && cb3.isSelected())
+                            tuesdayFT = true;
+
+                        if ( tuesdayP && tuesdayFT )
+                            gridTableTuesday.setVisible(true);
+                        else
+                            gridTableTuesday.setVisible(false);
+
+
+                        // filter wednesday
+                        boolean wednesdayP=false, wednesdayFT=false;
+
+                        if (Double.valueOf(Model.readFileGetMenuPrice(Model.file2)) <= foodPriceFilterChoice)
+                            wednesdayP = true;
+                        else
+                            wednesdayP = false;
+
+                        if (cb0.isSelected())
+                            wednesdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file2)).equals(cb1.getText()) && cb1.isSelected())
+                            wednesdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file2)).equals(cb2.getText()) && cb2.isSelected())
+                            wednesdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file2)).equals(cb3.getText()) && cb3.isSelected())
+                            wednesdayFT = true;
+
+                        if ( wednesdayP && wednesdayFT )
+                            gridTableWednesday.setVisible(true);
+                        else
+                            gridTableWednesday.setVisible(false);
+
+                        // filter thursday
+                        boolean thursdayP=false, thursdayFT=false;
+
+                        if (Double.valueOf(Model.readFileGetMenuPrice(Model.file3)) <= foodPriceFilterChoice)
+                            thursdayP = true;
+                        else
+                            thursdayP = false;
+
+                        if (cb0.isSelected())
+                            thursdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file3)).equals(cb1.getText()) && cb1.isSelected())
+                            thursdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file3)).equals(cb2.getText()) && cb2.isSelected())
+                            thursdayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file3)).equals(cb3.getText()) && cb3.isSelected())
+                            thursdayFT = true;
+
+                        if ( thursdayP && thursdayFT )
+                            gridTableThursday.setVisible(true);
+                        else
+                            gridTableThursday.setVisible(false);
+
+
+                        // filter friday
+                        boolean fridayP=false, fridayFT=false;
+
+                        if (Double.valueOf(Model.readFileGetMenuPrice(Model.file4)) <= foodPriceFilterChoice)
+                            fridayP = true;
+                        else
+                            fridayP = false;
+
+                        if (cb0.isSelected())
+                            fridayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file4)).equals(cb1.getText()) && cb1.isSelected())
+                            fridayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file4)).equals(cb2.getText()) && cb2.isSelected())
+                            fridayFT = true;
+                        if ((Model.readFileGetMenuFoodType(Model.file4)).equals(cb3.getText()) && cb3.isSelected())
+                            fridayFT = true;
+
+                        if ( fridayP && fridayFT )
+                            gridTableFriday.setVisible(true);
+                        else
+                            gridTableFriday.setVisible(false);
+
+                    } else
                         submitConfigsLabel.setText("Bitte wähle etwas aus!");
-
-
-
-                    // filter monday
-                    boolean mondayP=false, mondayFT=false;
-
-                    if (Double.valueOf(Model.readFileGetMenuPrice(Model.file0)) <= foodPriceFilterChoice)
-                        mondayP = true;
-                    else
-                        mondayP = false;
-
-                    if (cb0.isSelected())
-                        mondayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file0)).equals(cb1.getText()) && cb1.isSelected())
-                        mondayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file0)).equals(cb2.getText()) && cb2.isSelected())
-                        mondayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file0)).equals(cb3.getText()) && cb3.isSelected())
-                        mondayFT = true;
-
-                    if ( mondayP && mondayFT )
-                        gridTableMonday.setVisible(true);
-                    else
-                        gridTableMonday.setVisible(false);
-
-                    // filter tuesday
-                    boolean tuesdayP=false, tuesdayFT=false;
-
-                    if (Double.valueOf(Model.readFileGetMenuPrice(Model.file1)) <= foodPriceFilterChoice)
-                        tuesdayP = true;
-                    else
-                        tuesdayP = false;
-
-                    if (cb0.isSelected())
-                        tuesdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file1)).equals(cb1.getText()) && cb1.isSelected())
-                        tuesdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file1)).equals(cb2.getText()) && cb2.isSelected())
-                        tuesdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file1)).equals(cb3.getText()) && cb3.isSelected())
-                        tuesdayFT = true;
-
-                    if ( tuesdayP && tuesdayFT )
-                        gridTableTuesday.setVisible(true);
-                    else
-                        gridTableTuesday.setVisible(false);
-
-
-                    // filter wednesday
-                    boolean wednesdayP=false, wednesdayFT=false;
-
-                    if (Double.valueOf(Model.readFileGetMenuPrice(Model.file2)) <= foodPriceFilterChoice)
-                        wednesdayP = true;
-                    else
-                        wednesdayP = false;
-
-                    if (cb0.isSelected())
-                        wednesdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file2)).equals(cb1.getText()) && cb1.isSelected())
-                        wednesdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file2)).equals(cb2.getText()) && cb2.isSelected())
-                        wednesdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file2)).equals(cb3.getText()) && cb3.isSelected())
-                        wednesdayFT = true;
-
-                    if ( wednesdayP && wednesdayFT )
-                        gridTableWednesday.setVisible(true);
-                    else
-                        gridTableWednesday.setVisible(false);
-
-                    // filter thursday
-                    boolean thursdayP=false, thursdayFT=false;
-
-                    if (Double.valueOf(Model.readFileGetMenuPrice(Model.file3)) <= foodPriceFilterChoice)
-                        thursdayP = true;
-                    else
-                        thursdayP = false;
-
-                    if (cb0.isSelected())
-                        thursdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file3)).equals(cb1.getText()) && cb1.isSelected())
-                        thursdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file3)).equals(cb2.getText()) && cb2.isSelected())
-                        thursdayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file3)).equals(cb3.getText()) && cb3.isSelected())
-                        thursdayFT = true;
-
-                    if ( thursdayP && thursdayFT )
-                        gridTableThursday.setVisible(true);
-                    else
-                        gridTableThursday.setVisible(false);
-
-
-                    // filter friday
-                    boolean fridayP=false, fridayFT=false;
-
-                    if (Double.valueOf(Model.readFileGetMenuPrice(Model.file4)) <= foodPriceFilterChoice)
-                        fridayP = true;
-                    else
-                        fridayP = false;
-
-                    if (cb0.isSelected())
-                        fridayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file4)).equals(cb1.getText()) && cb1.isSelected())
-                        fridayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file4)).equals(cb2.getText()) && cb2.isSelected())
-                        fridayFT = true;
-                    if ((Model.readFileGetMenuFoodType(Model.file4)).equals(cb3.getText()) && cb3.isSelected())
-                        fridayFT = true;
-
-                    if ( fridayP && fridayFT )
-                        gridTableFriday.setVisible(true);
-                    else
-                        gridTableFriday.setVisible(false);
 
                 }});
 
@@ -418,21 +433,14 @@ public class View extends Application {
             //root.getChildren().addAll(headBox, bodyBox, footerBox);
             //root.setPadding(new Insets(10, 10, 10, 10));
             Scene sceneView = new Scene(root, 1300, 850);
-            sceneView.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
-            primaryStage.setScene(sceneView);
-            primaryStage.setTitle("SWT-Projekt");
-            primaryStage.show();
+            root.setStyle("-fx-padding: 5px;" + "-fx-spacing: 20px;");
+            //sceneView.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+            window.setScene(sceneView);
+            window.show();
+
         }
         catch(Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static void filterTable() {
-
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }

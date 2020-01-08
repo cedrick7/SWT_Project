@@ -15,21 +15,23 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 import static javafx.application.Application.launch;
 
-public class Login extends Application {
+public class Login {
 
     // init class-variables
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
+    public static void login() throws Exception {
         try {
             // *********************************************************************************************************
             // root
+            Stage window = new Stage();
+            window.initModality(Modality.APPLICATION_MODAL);
             BorderPane root = new BorderPane();
 
             // *********************************************************************************************************
@@ -39,7 +41,8 @@ public class Login extends Application {
 
             // title
             Label startTitle = new Label("Login");
-            startTitle.setId("h1");
+            //startTitle.setId("h1");
+            startTitle.setStyle("-fx-font-size: 20px;");
             startTitle.setFocusTraversable(true);
 
             // set Top
@@ -62,23 +65,23 @@ public class Login extends Application {
             VBox bodyBoxLogin = new VBox(10);
 
             // Username
-            Label usernameLabel = new Label("username:");
+            Label usernameLabel = new Label("Benutzername:");
             TextField usernameTextField = new TextField();
             usernameTextField.setMaxWidth(300);
-            usernameTextField.setPromptText("enter username here...");
+            usernameTextField.setPromptText("Benutzernamen hier eingeben...");
             //Label usernameFailed = new Label("pls enter username!");
             //usernameFailed.setVisible(false);
 
             // Password
-            Label passwordLabel = new Label("password:");
+            Label passwordLabel = new Label("Passwort:");
             PasswordField passwordTextField = new PasswordField();
             passwordTextField.setMaxWidth(300);
-            passwordTextField.setPromptText("enter password here...");
+            passwordTextField.setPromptText("Passwort hier eingeben...");
             //Label passwordFailed = new Label("pls enter password!");
             //passwordFailed.setVisible(false);
 
             // Submit
-            Button loginButton = new Button("login...");
+            Button loginButton = new Button("OK");
 
             // Failure info
             Label loginFailed = new Label();
@@ -91,15 +94,21 @@ public class Login extends Application {
                     String password = passwordTextField.getText();
 
                     if(username.equals(""))
-                        loginFailed.setText("pls enter username!");
+                        loginFailed.setText("Bitte Benutzernamen eingeben!");
                     else if(password.equals(""))
-                        loginFailed.setText("pls enter password!");
+                        loginFailed.setText("Bitte Passwort eingeben!");
                     else if(username.equals("admin") && password.equals("admin123")) {
-                        primaryStage.close();
+                        window.close();
                         // switch scene
+                        try {
+                            window.close();
+                            Editor.editor();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                     }
                     else
-                        loginFailed.setText("incorrect username or password!");
+                        loginFailed.setText("Falscher Benutzernamen oder falsches Passwort!");
                 }
 
             });
@@ -139,20 +148,16 @@ public class Login extends Application {
             //root.getChildren().addAll(headBox, bodyBox, footerBox);
             //root.setPadding(new Insets(10, 10, 10, 10));
             Scene sceneLogin = new Scene(root, 500, 600);
-            sceneLogin.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
-            primaryStage.setScene(sceneLogin);
-            primaryStage.setTitle("SWT-Projekt");
-            primaryStage.show();
+            root.setStyle("-fx-padding: 5px;" + "-fx-spacing: 20px;");
+            //sceneLogin.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+            window.setScene(sceneLogin);
+            window.showAndWait();
 
 
         }
         catch(Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }
