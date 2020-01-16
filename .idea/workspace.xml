@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="FERTIG!!!!!!!!! HURRRAAAAAAA!!!">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="xyz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/menu0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/menu1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/menu2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu2.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/menu3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu3.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/menu4.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu4.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/READ_ME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/READ_ME.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/View.java" afterDir="false" />
     </list>
     <list id="e987dbe1-1786-4aad-a1f1-371c86fce0e0" name="Cedrick" comment="Müssste so fertig sein ...">
       <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/Login.class" afterDir="false" />
@@ -89,11 +85,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="270">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="242">
+              <caret line="422" column="82" selection-start-line="422" selection-start-column="82" selection-end-line="422" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="410">
+              <caret line="137" column="83" selection-start-line="137" selection-start-column="83" selection-end-line="137" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Editor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+            <state relative-caret-position="219">
+              <caret line="243" column="83" selection-start-line="243" selection-start-column="83" selection-end-line="243" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,9 +199,9 @@
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Start.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Login.java" />
-        <option value="$PROJECT_DIR$/src/sample/View.java" />
         <option value="$PROJECT_DIR$/src/sample/READ_ME.txt" />
+        <option value="$PROJECT_DIR$/src/sample/View.java" />
+        <option value="$PROJECT_DIR$/src/sample/Login.java" />
         <option value="$PROJECT_DIR$/src/sample/Editor.java" />
       </list>
     </option>
@@ -506,7 +502,7 @@
       <workItem from="1578570275969" duration="351000" />
       <workItem from="1578592775475" duration="298000" />
       <workItem from="1578646321291" duration="1645000" />
-      <workItem from="1579160754987" duration="517000" />
+      <workItem from="1579160754987" duration="1321000" />
     </task>
     <task id="LOCAL-00001" summary="Classnames changed and some other changes">
       <created>1577041360861</created>
@@ -571,11 +567,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578506836671</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="xyz">
+      <created>1579161560625</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1579161560625</updated>
+    </task>
+    <task id="LOCAL-00011" summary="xyz">
+      <created>1579161868464</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579161868464</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82551000" />
+    <option name="totallyTimeSpent" value="83355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1235" height="1027" extended-state="0" />
@@ -671,7 +681,8 @@
     <MESSAGE value="Müssste so fertig sein ..." />
     <MESSAGE value="kleine änderung" />
     <MESSAGE value="FERTIG!!!!!!!!! HURRRAAAAAAA!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="FERTIG!!!!!!!!! HURRRAAAAAAA!!!" />
+    <MESSAGE value="xyz" />
+    <option name="LAST_COMMIT_MESSAGE" value="xyz" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -762,23 +773,6 @@
     <entry file="file://$PROJECT_DIR$/menus/menu0.dat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="121" selection-start-line="13" selection-start-column="121" selection-end-line="13" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -792,10 +786,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="121" selection-start-line="13" selection-start-column="121" selection-end-line="13" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="242">
+          <caret line="422" column="82" selection-start-line="422" selection-start-column="82" selection-end-line="422" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="137" column="83" selection-start-line="137" selection-start-column="83" selection-end-line="137" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,18 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Editor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="219">
+          <caret line="243" column="83" selection-start-line="243" selection-start-column="83" selection-end-line="243" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

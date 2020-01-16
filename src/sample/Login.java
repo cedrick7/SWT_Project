@@ -135,7 +135,7 @@ public class Login {
             AnchorPane footerBox1Login = new AnchorPane();
 
             // authors
-            Label authors = new Label("von Jeremy und Cedrick");
+            Label authors = new Label("von Jeremy Fuchs und Cedrick Candia Ferreira");
             AnchorPane.setRightAnchor(authors, 5.0);
 
 
