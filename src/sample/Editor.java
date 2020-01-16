@@ -170,7 +170,7 @@ public class Editor {
                     else if (menuContent.equals(""))
                         menuSetFailed.setText("Bitte Menu-Inhalt eingeben!");
                     else if (!menuPriceProof.matches("\\d{0,2}([\\.]\\d{0,2})?"))
-                        menuSetFailed.setText("Bitte Preis in richtiger Form eingeben (z.B.: 3,00)!");
+                        menuSetFailed.setText("Bitte Preis in richtiger Form eingeben (z.B.: 3.00)!");
                     else if (radioProof == false)
                         menuSetFailed.setText("Bitte triff eine Auswahl!");
                     else {
