@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Müssste so fertig sein ...">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="FERTIG!!!!!!!!! HURRRAAAAAAA!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/menu0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/menu1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/menu2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu2.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/menu3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu3.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/menu4.dat" beforeDir="false" afterPath="$PROJECT_DIR$/menus/menu4.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/Editor$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/Editor$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/Editor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/READ_ME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/READ_ME.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/READ_ME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/READ_ME.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Menu.java" afterDir="false" />
     </list>
     <list id="e987dbe1-1786-4aad-a1f1-371c86fce0e0" name="Cedrick" comment="Müssste so fertig sein ...">
       <change beforePath="$PROJECT_DIR$/out/production/SWT_Project/sample/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWT_Project/sample/Login.class" afterDir="false" />
@@ -81,17 +78,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/READ_ME.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
+            <state>
+              <caret column="41" selection-start-column="41" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/menus/menu0.dat">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,19 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+            <state relative-caret-position="599">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="150" column="70" selection-start-line="150" selection-start-column="70" selection-end-line="150" selection-end-column="70" />
+            <state relative-caret-position="1785">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,25 +128,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Editor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3750">
-              <caret line="256" column="70" selection-start-line="256" selection-start-column="70" selection-end-line="256" selection-end-column="70" />
+            <state relative-caret-position="1710">
+              <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3437">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#586#1640#0" />
-                <element signature="method#doInitfile#0;class#Model#0" />
-                <element signature="method#main#0;class#Model#0" />
               </folding>
             </state>
           </provider>
@@ -164,6 +142,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="121" selection-start-line="13" selection-start-column="121" selection-end-line="13" selection-end-column="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#586#1640#0" />
+                <element signature="method#doInitfile#0;class#Model#0" />
+                <element signature="method#main#0;class#Model#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,10 +203,10 @@
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Start.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/READ_ME.txt" />
         <option value="$PROJECT_DIR$/src/sample/Login.java" />
-        <option value="$PROJECT_DIR$/src/sample/Editor.java" />
         <option value="$PROJECT_DIR$/src/sample/View.java" />
+        <option value="$PROJECT_DIR$/src/sample/READ_ME.txt" />
+        <option value="$PROJECT_DIR$/src/sample/Editor.java" />
       </list>
     </option>
   </component>
@@ -226,7 +219,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1355" />
+    <option name="width" value="1235" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -286,6 +279,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -508,6 +502,11 @@
       <workItem from="1578150520822" duration="651000" />
       <workItem from="1578394808568" duration="1737000" />
       <workItem from="1578494603427" duration="7018000" />
+      <workItem from="1578510413064" duration="514000" />
+      <workItem from="1578570275969" duration="351000" />
+      <workItem from="1578592775475" duration="298000" />
+      <workItem from="1578646321291" duration="1645000" />
+      <workItem from="1579160754987" duration="517000" />
     </task>
     <task id="LOCAL-00001" summary="Classnames changed and some other changes">
       <created>1577041360861</created>
@@ -565,17 +564,24 @@
       <option name="project" value="LOCAL" />
       <updated>1578071147278</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="FERTIG!!!!!!!!! HURRRAAAAAAA!!!">
+      <created>1578506836671</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578506836671</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79113000" />
+    <option name="totallyTimeSpent" value="82551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1355" height="1027" extended-state="0" />
+    <frame x="0" y="23" width="1235" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2025895" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2372171" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -585,13 +591,13 @@
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880098" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27807486" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27700534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
@@ -612,6 +618,44 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16727717" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Learn" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="UI Designer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32880098" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27807486" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989796" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32834226" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Terminal" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -626,7 +670,8 @@
     <MESSAGE value="filterfunktion hinzugefügt" />
     <MESSAGE value="Müssste so fertig sein ..." />
     <MESSAGE value="kleine änderung" />
-    <option name="LAST_COMMIT_MESSAGE" value="kleine änderung" />
+    <MESSAGE value="FERTIG!!!!!!!!! HURRRAAAAAAA!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="FERTIG!!!!!!!!! HURRRAAAAAAA!!!" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -680,22 +725,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menus/menu0.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="https://github.com/maxivhuber/SWT-Project-WK_1208.git">
       <provider selected="true" editor-type-id="httpFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3437">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#586#1640#0" />
-            <element signature="method#doInitfile#0;class#Model#0" />
-            <element signature="method#main#0;class#Model#0" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -708,12 +744,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+        <state relative-caret-position="903">
+          <caret line="125" column="59" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6197#6198#0" expanded="true" />
-            <element signature="e#6225#6226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/READ_ME.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menus/menu0.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -725,34 +779,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/READ_ME.txt">
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="90">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#586#1640#0" />
+            <element signature="method#doInitfile#0;class#Model#0" />
+            <element signature="method#main#0;class#Model#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Login.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="150" column="70" selection-start-line="150" selection-start-column="70" selection-end-line="150" selection-end-column="70" />
+        <state relative-caret-position="599">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -761,18 +804,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Editor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3750">
-          <caret line="256" column="70" selection-start-line="256" selection-start-column="70" selection-end-line="256" selection-end-column="70" />
+        <state relative-caret-position="1710">
+          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/View.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        <state relative-caret-position="255">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

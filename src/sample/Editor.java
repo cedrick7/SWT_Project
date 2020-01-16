@@ -112,7 +112,7 @@ public class Editor {
                 @Override
                 public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                     menuPriceProof = newValue;
-                    if (!newValue.matches("\\d{0,2}([\\,]\\d{0,2})?"))
+                    if (!newValue.matches("\\d{0,2}([\\.]\\d{0,2})?"))
                         menuPrice = Double.parseDouble(oldValue);
                     else
                         menuPrice = Double.parseDouble(newValue);
@@ -169,7 +169,7 @@ public class Editor {
                         menuSetFailed.setText("Bitte Überschrift eingeben!");
                     else if (menuContent.equals(""))
                         menuSetFailed.setText("Bitte Menu-Inhalt eingeben!");
-                    else if (!menuPriceProof.matches("\\d{0,2}([\\,]\\d{0,2})?"))
+                    else if (!menuPriceProof.matches("\\d{0,2}([\\.]\\d{0,2})?"))
                         menuSetFailed.setText("Bitte Preis in richtiger Form eingeben (z.B.: 3,00)!");
                     else if (radioProof == false)
                         menuSetFailed.setText("Bitte triff eine Auswahl!");

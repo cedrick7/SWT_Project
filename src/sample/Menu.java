@@ -24,7 +24,7 @@ public class Menu implements Serializable {
         return menuIndex;
     }
 
-    public void getMenuIndex(int menuIndex) {
+    public void setMenuIndex(int menuIndex) {
         this.menuIndex = menuIndex;
     }
 
