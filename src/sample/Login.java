@@ -1,13 +1,9 @@
 package sample;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
-import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
@@ -17,10 +13,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-
-import static javafx.application.Application.launch;
 
 public class Login {
 
@@ -69,16 +61,12 @@ public class Login {
             TextField usernameTextField = new TextField();
             usernameTextField.setMaxWidth(300);
             usernameTextField.setPromptText("Benutzernamen hier eingeben...");
-            //Label usernameFailed = new Label("pls enter username!");
-            //usernameFailed.setVisible(false);
 
             // Password
             Label passwordLabel = new Label("Passwort:");
             PasswordField passwordTextField = new PasswordField();
             passwordTextField.setMaxWidth(300);
             passwordTextField.setPromptText("Passwort hier eingeben...");
-            //Label passwordFailed = new Label("pls enter password!");
-            //passwordFailed.setVisible(false);
 
             // Submit
             Button loginButton = new Button("OK");
@@ -145,11 +133,8 @@ public class Login {
 
 
             // *********************************************************************************************************
-            //root.getChildren().addAll(headBox, bodyBox, footerBox);
-            //root.setPadding(new Insets(10, 10, 10, 10));
             Scene sceneLogin = new Scene(root, 500, 600);
             root.setStyle("-fx-padding: 5px;" + "-fx-spacing: 20px;");
-            //sceneLogin.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
             window.setScene(sceneLogin);
             window.showAndWait();
 

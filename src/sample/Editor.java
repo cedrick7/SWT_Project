@@ -1,6 +1,5 @@
 package sample;
 
-import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -251,11 +250,8 @@ public class Editor {
 
 
             // *********************************************************************************************************
-            //root.getChildren().addAll(headBox, bodyBox, footerBox);
-            //root.setPadding(new Insets(10, 10, 10, 10));
             Scene sceneEditor = new Scene(root, 500, 600);
             root.setStyle("-fx-padding: 5px;" + "-fx-spacing: 20px;");
-            //sceneEditor.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
             window.setScene(sceneEditor);
             window.show();
 

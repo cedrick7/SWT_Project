@@ -15,13 +15,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 0, 0));
         primaryStage.show();
         primaryStage.close();
-        //View.window.show();
         View.view();
-    }
-
-
-    public static void clearConsole() {
-        System.out.print("\b \b");
     }
 
     public static void main(String[] args) {

@@ -14,10 +14,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import sun.plugin2.util.ColorUtil;
 
 public class Start extends Application {
 
@@ -47,7 +44,6 @@ public class Start extends Application {
 
             // set Top
             headBox0Start.getChildren().addAll(startTitle, adminLogin);
-            //AnchorPane.setTopAnchor(headBoxTopStart, 0.5);
 
             // separator
             Separator separatorLineHead = new Separator(Orientation.HORIZONTAL);
@@ -113,7 +109,7 @@ public class Start extends Application {
                     else {
                         startSubmitFailed.setText("");
 
-                        Main.clearConsole();
+                        //Main.clearConsole();
                         System.out.println("choice: " + assortmentRadioInfo + "\n");
 
                         // switch scene

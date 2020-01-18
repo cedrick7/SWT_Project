@@ -1,7 +1,5 @@
 package sample;
 
-import com.sun.tools.javac.comp.Check;
-import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -42,7 +40,6 @@ public class View {
 
             // title
             Label viewTitle = new Label("Mensaplan");
-            //viewTitle.setId("h1");
             viewTitle.setStyle("-fx-font-size: 20px;");
             viewTitle.setFocusTraversable(true);
 
@@ -64,7 +61,6 @@ public class View {
 
             // set Top
             headBox0View.getChildren().addAll(viewTitle, adminLogin);
-            //AnchorPane.setTopAnchor(headBoxTopStart, 0.5);
 
             // separator
             Separator separatorLineHead = new Separator(Orientation.HORIZONTAL);
@@ -84,35 +80,6 @@ public class View {
             tableBox.setStyle("-fx-font-size: 18px;");
 
             // layout table
-            /*
-            GridPane gridTable = new GridPane();
-            gridTable.setPadding(new Insets(10,0,10,0));
-            gridTable.setHgap(10);
-            gridTable.setVgap(10);
-            //gridTable.setGridLinesVisible(true);
-            /*gridTable.setStyle(
-                    "-fx-text-fill: GREEN !important;" +
-                    //"-fx-font-size: 20px;" +
-                    //"-fx-padding: 10;" +
-                    "-fx-border-style: solid inside;" +
-                    "-fx-border-width: 2;" +
-                    "-fx-border-insets: 5;" +
-                    "-fx-border-radius: 5;" +
-                    "-fx-border-color: blue;" +
-                    "-fx-background-fill: black;");
-
-            gridTable.setVisible(false);
-
-            //root.add(node, spalte, zeile)
-
-            gridTable.add(new Label("x"), 0, 0);
-            gridTable.add(new Label("x"), 0, 1);
-            gridTable.add(new Label("x"), 0, 2);
-            gridTable.add(new Label("x"), 0, 3);
-            gridTable.add(new Label("x"), 0, 4);
-            gridTable.add(new Label("x"), 0, 5);
-*/         
-
             GridPane gridTableTitleCol = new GridPane();
             gridTableTitleCol.setPadding(new Insets(10,0,10,0));
             gridTableTitleCol.setHgap(5);
@@ -120,16 +87,7 @@ public class View {
 
             gridTableTitleCol.addColumn(1, (new Label("Tag")), (new Label("Menüname")), (new Label("Menü\n\n")), (new Label("Preis")), (new Label("Art")));
 
-/*
             // monday
-            gridTable.add(new Label("x"), 2, 0);
-            gridTable.add(new Label(Model.readFileGetWeekday(Model.file0)), 2, 1);
-            gridTable.add(new Label(Model.readFileGetMenuTitle(Model.file0)), 2, 2);
-            gridTable.add(new Label(Model.readFileGetMenuContent(Model.file0)), 2, 3);
-            gridTable.add(new Label(String.valueOf(Model.readFileGetMenuPrice(Model.file0))), 2, 4);
-            gridTable.add(new Label(Model.readFileGetMenuFoodType(Model.file0)), 2, 5);
-*/
-
             GridPane gridTableMonday = new GridPane();
             gridTableMonday.setPadding(new Insets(10,0,10,0));
             gridTableMonday.setHgap(10);
@@ -202,7 +160,6 @@ public class View {
 
 
             // configure price
-
             HBox configTablePricing = new HBox(30);
             Label configTablePricingText = new Label("Preise bis " + df.format(configTablePricingSBStart) + "€");
 
@@ -212,7 +169,6 @@ public class View {
             configTablePricingSB.setMax(15);
             configTablePricingSB.setMinWidth(230);
             configTablePricingSB.setMaxWidth(350);
-            //configTablePricingSB = configTablePricingSBStart;
             configTablePricingSB.valueProperty().addListener(new ChangeListener<Number>() {
                 @Override
                 public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
@@ -223,7 +179,6 @@ public class View {
             });
 
             // configure type of food
-
             HBox configTableFoodType = new HBox(30);
 
             CheckBox cb0 = new CheckBox("Alles");
@@ -234,7 +189,6 @@ public class View {
 
 
             // submit configurations
-
             HBox submitConfigs = new HBox(30);
 
             Button submitConfigsButton = new Button("OK");
@@ -392,8 +346,6 @@ public class View {
                 }});
 
             // set layout
-
-            //tableBox.getChildren().add(gridTable);
             tableBox.getChildren().addAll(gridTableTitleCol, gridTableMonday, gridTableTuesday, gridTableWednesday, gridTableThursday, gridTableFriday);
 
             configTablePricing.getChildren().addAll(configTablePricingSB, configTablePricingText);
@@ -430,11 +382,8 @@ public class View {
 
 
             // *********************************************************************************************************
-            //root.getChildren().addAll(headBox, bodyBox, footerBox);
-            //root.setPadding(new Insets(10, 10, 10, 10));
             Scene sceneView = new Scene(root, 1300, 850);
             root.setStyle("-fx-padding: 5px;" + "-fx-spacing: 20px;");
-            //sceneView.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
             window.setScene(sceneView);
             window.show();
 
