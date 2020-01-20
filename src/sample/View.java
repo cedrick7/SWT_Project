@@ -29,7 +29,7 @@ public class View {
 
             // *********************************************************************************************************
             // root
-            window.setTitle("SWT-Projekt");
+            window.setTitle("Dein Mensaplaner");
 
             BorderPane root = new BorderPane();
 

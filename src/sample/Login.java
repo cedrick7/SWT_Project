@@ -16,14 +16,13 @@ import javafx.stage.Stage;
 
 public class Login {
 
-    // init class-variables
-
     public static void login() throws Exception {
         try {
             // *********************************************************************************************************
             // root
             Stage window = new Stage();
             window.initModality(Modality.APPLICATION_MODAL);
+            window.setTitle("Dein Mensaplaner");
             BorderPane root = new BorderPane();
 
             // *********************************************************************************************************
